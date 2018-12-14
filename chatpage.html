@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--this makes it be for mobile shape-->
+     <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
+     </head>
+
+  <body>
+<header>
+   <!--burger menu-->
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <ul>
+  <li><a href="mainpage.html">Home</a></li>
+  <li>
+  <a href="#">Info</a></li>
+  <li><a href="#">Shedule</a></li>
+  <li><a href="chatpage.html">Chats</a></li>
+  <li><a href="#">Docs</a></li>
+  <li><a href="index.html">Logout</a></li>
+  </ul>
+
+</div>
+
+<span class="burgerSpace" onclick="openNav()">&#9776; Fronter</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    <!--burger menu end-->
+     <!--icons-->
+
+    <div class="icons"></div>
+    <div class="icons notice"></div>
+    </header>
+
+    <!--boxes-->
+<div class="filter">E-mail</div>
+<div class="filter">Chat</div>
+
+<!--search bar-->
+<ul id="myUL">
+  <li><a href="conversationpage.html">Anele</a></li>
+  <li><a href="conversationpage.html">Angel</a></li>
+
+  <li><a href="conversationpage.html">Julia</a></li>
+  <li><a href="conversationpage.html">Pola</a></li>
+
+  <li><a href="conversationpage.html">Patryck</a></li>
+  <li><a href="conversationpage.html">Paula</a></li>
+
+  <li><a href="conversationpage.html">Simon</a></li>
+  <li><a href="conversationpage.html">Tabea</a></li>
+  <li><a href="conversationpage.html">Lili</a></li>
+  <li><a href="conversationpage.html">Hannah</a></li>
+</ul>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+   <script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+
+    </body>
+    <footer>
+       <img src="img/whitelogo.png" alt="logo">
+    </footer>
+</html>

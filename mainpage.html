@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--this makes it be for mobile shape-->
+     <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
+     </head>
+
+  <body>
+<header>
+   <!--burger menu-->
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <ul>
+  <li><a href="mainpage.html">Home</a></li>
+  <li><a href="#">Info</a></li>
+  <li><a href="#">Shedule</a></li>
+  <li><a href="chatpage.html">Chats</a></li>
+  <li><a href="#">Docs</a></li>
+  <li><a href="index.html">Logout</a></li>
+  </ul>
+
+</div>
+
+<span class="burgerSpace" onclick="openNav()">&#9776; Fronter</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    <!--burger menu end-->
+
+    <!--icons-->
+
+    <div class="icons"></div>
+    <div class="icons notice"></div>
+    </header>
+
+     <ul id="squareMenu">
+       <li><a href="#">Info</a></li>
+  <li><a href="#">Shedule</a></li>
+  <li><a href="chatpage.html">Chats</a></li>
+  <li><a href="#">Docs</a></li>
+   </ul>
+
+
+    </body>
+    <footer>
+       <img src="img/whitelogo.png" alt="logo">
+    </footer>
+</html>
