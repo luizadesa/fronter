@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet" media="all"/>
+
+</head>
+
+<body>
+
+    <nav> 
+     <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul class="listnone">
+      <li><a href="index.html">Home</a></li>                            
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      </ul>
+      </div>
+
+<span class="burgerSpace" onclick="openNav()">&#9776; <img src="img/myportsignallogo.png" alt="logo"> </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    <!--burger menu end-->
+    
+</nav>
+    
+    
+<div class="content">
+        <section class="container">
+    <a href="aboutme.html"><img src="img/profilephoto.png" alt= "mypicture"/></a>    
+    <p> About Me </p>
+</section>
+
+  <section class="box">
+   <a href="projects.html"><img src="img/projectsimg.png" alt="projectlogo"/></a>
+   <p> Projects </p>
+</section> 
+  </div>    
+  <footer>
+       
+        <p class="footer-anchor"><a href="#">Go to Top</a></p>
+        <span class="credits"> Made by Luiza 2019</span>
+</footer>
+</body>   
+</html>
+    

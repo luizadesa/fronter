@@ -1,0 +1,201 @@
+.logo{
+    width: 30%;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+body{
+    background-image: url("img/spacebackgroung.png");
+    background-repeat: repeat;
+    background-position:center;
+    color: white;
+  background-size: 100% 100%;
+   font-family: 'Inconsolata', monospace;
+}
+
+nav{
+    margin-bottom: 6rem;
+}
+
+/*burger menu*/
+
+#mySidenav ul li{
+    font-family: sans-serif;
+}
+#mySidenav ul li:hover {
+    background: #FF66FF;
+}
+.burgerSpace {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.burgerSpace img{
+    vertical-align: bottom;
+    margin-left: 1rem;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #9e1687;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+ 
+}
+.listnone{
+     list-style: none;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+    font-family: 'Inconsolata', monospace;
+  
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/*circulo*/
+
+.content{
+    margin-left: auto;
+    margin-right:auto;
+    width: 50%;
+}
+
+.container{
+line-height:35px;
+vertical-align:top;
+display:inline-block;
+text-align:center;
+font-size:30px;
+font-family: 'Inconsolata', monospace;
+color: white;
+margin-right: 5rem;
+margin-bottom: 2rem;
+    
+}
+
+
+.container img {
+    max-width:400px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+   
+}
+
+.box img {
+    max-width: 400px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+   
+}
+
+.box{
+display:inline-block;
+line-height:35px;
+vertical-align:top;
+text-align:center;
+font-size:30px;
+font-family: 'Inconsolata', monospace;
+color: white;
+    margin-bottom:6rem;
+
+}
+
+ footer{
+    width: 100%;
+    height: 7vh;
+    background-color:#9e1687;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer img {
+    height: 6vh;
+    }
+span img{
+    height: 6vh;
+}
+
+/*about me page*/
+
+.luizahacker{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    width: auto;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+}
+
+main p{
+    margin-left:auto;
+    margin-right:auto;
+    padding: 20px;
+}
+
+.curriculum{
+    text-align:center;
+    margin-left: auto;
+    margin-bottom:auto;
+    
+}
+
+.circle{
+background:#fa0c01;
+color:#fff;
+width:300px;
+height:300px;
+line-height:300px;
+vertical-align:middle;
+text-align:center;
+font-size:30px;
+border-radius:50%;
+-moz-border-radius:50%;
+-webkit-border-radius:50%;
+display: inline-block;
+vertical-align:top;
+}
